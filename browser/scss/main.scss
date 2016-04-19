@@ -1,0 +1,8 @@
+$sidepadding: calc(50vh + 40px);
+
+#main{
+  padding: 30px $sidepadding 30px $sidepadding;
+  width: 100vw;
+}
+
+@import 'sidebars/main';
