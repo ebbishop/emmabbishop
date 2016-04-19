@@ -1,0 +1,48 @@
+$borderrad: 0;
+
+left-bar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  border-right: black solid 1px;
+}
+
+left-bar :first-child{
+  background-color: purple;
+  border-bottom: black solid 1px;
+}
+
+left-bar :last-child{
+  background-color: green;
+}
+
+right-bar{
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  border-left: black solid 1px;
+}
+
+right-bar :first-child{
+  background-color: blue;
+  border-bottom: black solid 1px;
+}
+
+right-bar :last-child{
+  background-color: red;
+}
+
+.small{
+  color: white;
+  font-weight: bold;
+  font-family: 'Inconsolata';
+  font-size: 40px;
+  text-align: center;
+  line-height: 50vh;
+  min-width: 40px;
+  height: 50vh;
+  min-width: 40px;
+  width: 50vh;
+}
