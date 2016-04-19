@@ -1,0 +1,22 @@
+{
+  "name": "emmabbishop",
+  "version": "1.0.0",
+  "description": "Emma Bishop's Personal Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e html,css,js main.js"
+  },
+  "author": "Emma Bishop",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
+    "babel": "^6.5.2",
+    "bluebird": "^3.3.5",
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.9.1"
+  }
+}
