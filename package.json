@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon -e html,css,js index.js"
+    "start": "nodemon -e html,css,js index.js",
+    "postinstall": "grunt uglify"
   },
   "engines": {
     "node": "5.9.1"
@@ -13,12 +14,22 @@
   "author": "Emma Bishop",
   "license": "ISC",
   "dependencies": {
-    "angular": "^1.5.3",
+    "angular": "^1.5.5",
     "angular-ui-router": "^0.2.18",
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3",
     "morgan": "^1.7.0",
-    "nodemon": "^1.9.1"
+    "nodemon": "^1.9.1",
+    "run-sequence": "^1.1.5"
   },
   "repository": {
     "type": "git",
