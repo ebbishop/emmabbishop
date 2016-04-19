@@ -6,6 +6,7 @@ var sass = require('gulp-sass');
 var runSeq = require('run-sequence');
 var rename = require('gulp-rename');
 
+
 // re-load
 gulp.task('reload', function () {
   livereload.reload();
@@ -29,17 +30,13 @@ gulp.task('buildCSS', function(){
   .pipe(plumber())
   .pipe(sass())
   .pipe(rename('style.css'))
-  .pipe(gulp.dest('./public'))
+  .pipe(gulp.dest('./public'));
 });
 
 
 // composed js & css tasks
 gulp.task('build', function(){
-  if(process.env.NODE_ENV === 'production'){
-    runSeq(['buildJSProduction', 'buildCSSProduction']);
-  }else{
     runSeq(['buildJS', 'buildCSS']);
-  }
 });
 
 gulp.task('default', function(){
