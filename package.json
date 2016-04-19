@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon -e html,css,js index.js",
-    "postinstall": "grunt uglify"
+    "postinstall": "gulp build"
   },
   "engines": {
     "node": "5.9.1"
