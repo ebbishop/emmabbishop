@@ -4,6 +4,7 @@ var concat = require('gulp-concat');
 var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
 var runSeq = require('run-sequence');
+var rename = require('gulp-rename');
 
 // re-load
 gulp.task('reload', function () {
