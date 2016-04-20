@@ -1,0 +1,53 @@
+
+.navbar{
+  height: 104px;
+  background-color: $darkcolor;
+  box-shadow: 0 3px 8px $shadowcolor;
+}
+
+.navbar > a{
+  text-decoration: none;
+}
+
+.navbar-brand > a{
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  padding: 20px 30px;
+  color: $textcolor;
+}
+  .navbar-brand > a:hover, .navbar-nav > li > a:hover, .navbar-brand > a:focus, .navbar-nav > li > a:focus{
+    border: $hovercolor 3px solid;
+    background-color: $darkcolor;
+  }
+
+.navbar-right{
+  padding-right: 30px;
+}
+
+@media (min-width: 768px){
+  .navbar-center .navbar-nav{
+    float: none;
+    text-align: center;
+  }
+  .navbar-center .navbar-nav li{
+    float: none;
+  }
+  .navbar-center .nav > li{
+    display: inline;
+  }
+  .navbar-center .nav > li > a{
+    display: inline-block;
+  }
+}
+
+.navbar-nav > li > a{
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  color: $textcolor;
+  padding: 30px 10px;
+  margin: 0 20px;
+  border: $darkcolor 3px solid;
+}
+

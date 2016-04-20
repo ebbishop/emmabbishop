@@ -1,15 +1,39 @@
 /*$sidepadding: calc(50vh + 40px);*/
 $sidepadding: 50px;
 
+$textcolor: #FFFFFF;
+$hovertext: #FCFFA6;
+$hovercolor: #5DBF40;
+$darkcolor: #235C1F;
+$shadowcolor: #091B0A;
+
 body{
   background-color: #F8FBF4
 }
 
 #main{
   box-sizing: border-box;
-  padding: 30px $sidepadding 30px $sidepadding;
-  width: calc(100vw - 100vh);
+  padding: 100px $sidepadding 30px $sidepadding;
   margin: auto;
 }
 
-@import 'sidebars/main';
+.content-header{
+  font-family: 'Inconsolata', sans-serif;
+  color: $darkcolor;
+  font-size: 50px;
+  text-align: center;
+  padding: 30px 0;
+  margin: 10px 0 0 0;
+  clear: both;
+  border-width: 1px;
+  border-image: -webkit-linear-gradient(left, #fff, $hovercolor, $shadowcolor, $hovercolor, #fff) 0 0 1 0;
+}
+
+.content{
+  font-family: 'Hind', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  padding: 20px;
+}
+
+@import 'navbar/main';
