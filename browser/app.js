@@ -6,3 +6,12 @@ var emma = angular.module('emma', ['ui.router'])
   $urlRouterProvider.when('/', '/home');
   $urlRouterProvider.otherwise('/');
 });
+
+emma.run(function($rootScope, $window){
+  $rootScope.$on('$stateChangeStart', function(ev, toState){
+    if(toState.external){
+      ev.preventDefault();
+      $window.open(toState.url, '_blank');
+    }
+  });
+});

@@ -67,6 +67,10 @@ right-bar{
   line-height: 50vh;
   min-width: 40px;
   width: 50vh;
+  max-width: 266px;
   height: 50vh;
   padding: 0 50px 0 50px;
 }
+  .small:hover{
+    cursor: pointer;
+  }
