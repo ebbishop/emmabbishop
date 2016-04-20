@@ -1,8 +1,15 @@
-$sidepadding: calc(50vh + 40px);
+/*$sidepadding: calc(50vh + 40px);*/
+$sidepadding: 50px;
+
+body{
+  background-color: #F8FBF4
+}
 
 #main{
+  box-sizing: border-box;
   padding: 30px $sidepadding 30px $sidepadding;
-  width: 100vw;
+  width: calc(100vw - 100vh);
+  margin: auto;
 }
 
 @import 'sidebars/main';

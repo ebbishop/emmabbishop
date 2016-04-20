@@ -1,48 +1,72 @@
 $borderrad: 0;
+$borderstyle: black solid 1px;
 
 left-bar{
   position: fixed;
   left: 0;
   top: 0;
   height: 100vh;
-  border-right: black solid 1px;
 }
+  left-bar .small{
+    border-right: $borderstyle;
+    text-align: left;
+  }
+    left-bar .small:first-child{
+      background-color: #9D3F63;
+      /*border-bottom: $borderstyle;*/
+      border-bottom-right-radius: $borderrad;
+    }
+      left-bar .small:first-child:hover{
+        background-color: #D17595;
+      }
 
-left-bar :first-child{
-  background-color: purple;
-  border-bottom: black solid 1px;
-}
+    left-bar .small:last-child{
+      background-color: #264773;
+      border-top: $borderstyle;
+      border-top-right-radius: $borderrad;
+    }
+      left-bar .small:last-child:hover{
+        background-color: #4964B6;
+      }
 
-left-bar :last-child{
-  background-color: green;
-}
 
 right-bar{
   position: fixed;
   right: 0;
   top: 0;
   height: 100vh;
-  border-left: black solid 1px;
 }
-
-right-bar :first-child{
-  background-color: blue;
-  border-bottom: black solid 1px;
-}
-
-right-bar :last-child{
-  background-color: red;
-}
+  right-bar .small{
+    border-left: $borderstyle;
+    text-align: right;
+  }
+    right-bar .small:first-child{
+      background-color: #1F4D2C;
+      /*border-bottom: $borderstyle;*/
+      border-bottom-left-radius: $borderrad;
+    }
+      right-bar .small:first-child:hover{
+        background-color: #339944;
+      }
+    right-bar .small:last-child{
+      background-color: #8240A0;
+      border-top: $borderstyle;
+      border-top-left-radius: $borderrad;
+    }
+      right-bar .small:last-child:hover{
+        background-color: #A779D2;
+      }
 
 .small{
+  position: relative;
+  box-sizing: border-box;
   color: white;
   font-weight: bold;
   font-family: 'Inconsolata';
   font-size: 40px;
-  text-align: center;
   line-height: 50vh;
   min-width: 40px;
-  height: 50vh;
-  min-width: 40px;
   width: 50vh;
+  height: 50vh;
+  padding: 0 50px 0 50px;
 }
