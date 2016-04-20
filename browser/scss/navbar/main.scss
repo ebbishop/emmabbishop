@@ -1,9 +1,8 @@
-$textcolor: #DEE8BA;
-$hovercolor: #5DBF40;
 
 .navbar{
   height: 100px;
-  background-color: #235C1F;
+  background-color: $darkcolor;
+  box-shadow: 0 3px 8px $shadowcolor;
 }
 
 .navbar > a{
@@ -15,9 +14,9 @@ $hovercolor: #5DBF40;
   font-size: 60px;
   line-height: 60px;
   padding: 20px 30px;
-  color: $textcolor;
+  color: $lightcolor;
 }
-  .navbar-brand > a:hover{
+  .navbar-brand > a:hover, .navbar-nav > li > a:hover{
     background-color: $hovercolor;
     text-decoration: none;
     cursor: pointer;
@@ -27,15 +26,28 @@ $hovercolor: #5DBF40;
   padding-right: 30px;
 }
 
+@media (min-width: 768px){
+  .navbar-center .navbar-nav{
+    float: none;
+    text-align: center;
+  }
+  .navbar-center .navbar-nav li{
+    float: none;
+  }
+  .navbar-center .nav > li{
+    display: inline;
+  }
+  .navbar-center .nav > li > a{
+    display: inline-block;
+  }
+}
+
 .navbar-nav > li > a{
   font-family: 'Inconsolata', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 40px;
-  color: $textcolor;
+  color: $lightcolor;
   padding: 30px 10px;
   margin: 0 20px;
 }
-.navbar-nav > li > a:hover{
-  background-color: $hovercolor;
-  cursor: pointer;
-}
+
