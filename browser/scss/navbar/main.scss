@@ -1,0 +1,41 @@
+$textcolor: #DEE8BA;
+$hovercolor: #5DBF40;
+
+.navbar{
+  height: 100px;
+  background-color: #235C1F;
+}
+
+.navbar > a{
+  text-decoration: none;
+}
+
+.navbar-brand > a{
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  padding: 20px 30px;
+  color: $textcolor;
+}
+  .navbar-brand > a:hover{
+    background-color: $hovercolor;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.navbar-right{
+  padding-right: 30px;
+}
+
+.navbar-nav > li > a{
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  color: $textcolor;
+  padding: 30px 10px;
+  margin: 0 20px;
+}
+.navbar-nav > li > a:hover{
+  background-color: $hovercolor;
+  cursor: pointer;
+}
