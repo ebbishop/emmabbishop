@@ -20,9 +20,21 @@
     border: $hovercolor 3px solid;
     background-color: $darkcolor;
   }
-
+  .navbar-brand > a:hover, .navbar-nav > li > a:hover{
+    cursor: pointer;
+  }
 .navbar-right{
   padding-right: 30px;
+}
+
+.navbar-header{
+  line-height:  100px
+}
+
+.navbar-toggle .icon-bar,
+.navbar-toggle:hover .icon-bar
+.navbar-toggle:focus .icon-bar{
+  background-color: white;
 }
 
 @media (min-width: 768px){
