@@ -52,4 +52,4 @@ gulp.task('default', function(){
 
   livereload.listen();
 
-})
+});
