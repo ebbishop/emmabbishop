@@ -1,0 +1,147 @@
+form{
+  background: white;
+  padding: 0 20px;
+}
+
+body{
+  color: #06370C;
+}
+
+a{
+  color: inherit;
+}
+
+a:hover{
+  color: #54B660;
+  text-decoration: none;
+}
+
+footer .footer-above{
+  background-color: white;
+  color: #235C1F;
+}
+
+footer .footer-below{
+  background-color: #235C1F;
+}
+
+section.success, header{
+  background-color: #54B660;
+}
+div.success{
+  background-color: #54B660;
+  color: white;
+  padding: 10px;
+  margin: 15px;
+}
+section h2{
+  border-bottom: dashed #235C1F 2px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  color: inherit;
+}
+  section.success h2{
+    border-bottom: dashed white 2px;
+  }
+
+.btn-success{
+  background-color: #53A55D;
+  border-color: #53A55D;
+}
+  .btn-success:hover, .btn-success:focus, .btn-success:active{
+    background-color: #54B660;
+    border-color: #54B660;
+  }
+
+.btn-outline{
+  color: #06370C;
+  border-color: #06370C;
+}
+.btn-outline:hover, btn-outline:focus, .btn-outline:active{
+  color: #54B660;
+  border-color: #54B660;
+}
+
+.navbar-default{
+  background-color: #235C1F;
+}
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  background-color: #06370C;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+  color: #54B660;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active{
+  color: #54B660;
+}
+
+.profile-container{
+  height: 150px;
+  width: 150px;
+  margin: auto;
+}
+
+img.resize{
+  width: 100%;
+  height: auto;
+}
+
+#about .tech:first-child{
+  border-right: solid white 1px;
+}
+
+#portfolio .portfolio-item .portfolio-main .caption {
+  background: rgba(84,182,96,.8);
+
+}
+#portfolio .portfolio-item .portfolio-info{
+  display: none;
+  z-index: 100;
+}
+#portfolio .portfolio-item .portfolio-info.show{
+  display: block;
+}
+#portfolio .portfolio-team{
+  padding: 10px 0;
+  font-size: 1.2em;
+  font-style: italic;
+}
+#portfolio .portfolio-links .btn-success{
+  color: inherit;
+  border-color: white;
+  background-color: transparent;
+}
+#experience ul{
+  list-style: none;
+}
+
+#experience .btn-success{
+  margin-right: 10px;
+  background: transparent;
+  color: inherit;
+  border-color: inherit;
+}
+
+.experience-title{
+  cursor: pointer;
+}
+.experience-title:hover{
+  color: #54B660;
+}
+
+#experience ul.experience-content{
+  display: none;
+  padding: 10px;
+  margin: 10px;
+  list-style: disc outside none;
+  font-size: 16px;
+  margin-left: 30px;
+}
+#experience ul.experience-content li{
+  padding: 5px 0 0 5px;
+}
+ul.experience-content .show{
+  display: inline;
+}
