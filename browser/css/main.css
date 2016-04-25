@@ -3,6 +3,7 @@ form{
   padding: 0 20px;
 }
 
+
 body{
   color: #06370C;
 }
@@ -16,10 +17,7 @@ a:hover{
   text-decoration: none;
 }
 
-footer .footer-above{
-  background-color: white;
-  color: #235C1F;
-}
+
 
 footer .footer-below{
   background-color: #235C1F;
@@ -27,6 +25,8 @@ footer .footer-below{
 
 section.success, header{
   background-color: #54B660;
+  background: #54B660;
+
 }
 div.success{
   background-color: #54B660;
@@ -142,6 +142,18 @@ img.resize{
 #experience ul.experience-content li{
   padding: 5px 0 0 5px;
 }
+
 ul.experience-content .show{
   display: inline;
+}
+
+a.btn-social.btn-outline, a.btn-social.btn-outline:focus, a.btn-social.btn-outline:active {
+  color: white;
+  border-color: white;
+  background: transparent;
+}
+
+a.btn-social.btn-outline:hover {
+  color: #235C1F;
+  background-color: white;
 }

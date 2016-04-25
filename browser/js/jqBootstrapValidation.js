@@ -478,7 +478,7 @@
                 // How many errors did we find?
                 if (settings.options.semanticallyStrict && errorsFound.length === 1) {
                   // Only one? Being strict? Just output it.
-                  $helpBlock.html(errorsFound[0] + 
+                  $helpBlock.html(errorsFound[0] +
                     ( settings.options.prependExistingHelpBlock ? $helpBlock.data("original-contents") : "" ));
                 } else {
                   // Multiple? Being sloppy? Glue them together into an UL.
@@ -488,7 +488,7 @@
               } else {
                 $controlGroup.removeClass("warning error success");
                 if (value.length > 0) {
-                  $controlGroup.addClass("success");
+                  // $controlGroup.addClass("success");
                 }
                 $helpBlock.html($helpBlock.data("original-contents"));
               }
